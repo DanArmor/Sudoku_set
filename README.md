@@ -50,3 +50,12 @@ And, to check, is our current turn is valid - we don't need to check all of cell
           * Decrease param k.
           * Delete elements from sets
   4. If you have tried every number - just clear the cell
+
+## Compilation
+
+`gcc sudoku.c -L./lib -lbitset -Wall -o sudoku`. 
+
+If something went wrong - you can recompile bitset library as well:
+* `gcc bitset.c -Wall -c`
+* `ar r libbitset.a bitset.o`
+For more information about bitset lib visit [Bit set library](https://github.com/DanArmor/Bit_set_C).

@@ -22,7 +22,7 @@ And now our grid looks like this:
 
 ![Second img](img/2.png)
 
-For rows and columns the index in set is: number + i*n where i is num of column or row, and n is length of one side of grid.
+For rows and columns the index in set is: `number + i*n` where `i` is `num of column or row`, and `n is length of one side of grid`.
 
 ---
 

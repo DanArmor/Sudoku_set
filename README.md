@@ -2,6 +2,9 @@
 Simple Sudoku solver based on bit sets. For educational purposes.
 Made with C and [Bit set library](https://github.com/DanArmor/Bit_set_C)
 
+## Input data forman
+First number is length of one side of the grid - n. And next n^2 numbers - grid. If number is 0 - it is empty cell.
+
 ## Main idea
 The common problem of the simplest sudoku solvers is necessity to check ony by one each cell in row, column and box. So here we can avoid that by using sets for recognition, what cells we have already filled.
 

@@ -29,7 +29,7 @@ For rows and columns the index in set is: `number + i*n` where `i` is `num of co
 
 ---
 
-And for boxes is ("/" equals "mod") : `number + (i / sqrt(n)) * n * sqrt(n) + (j / sqrt(n)) * n`. 
+And for boxes is ("/" equals "div") : `number + (i / sqrt(n)) * n * sqrt(n) + (j / sqrt(n)) * n`. 
 
 ---
 

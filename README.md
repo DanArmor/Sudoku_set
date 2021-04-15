@@ -33,3 +33,17 @@ And for boxes is ("/" equals "mod") : `number + (i / sqrt(n)) * n * sqrt(n) + (j
 From `1 to n *sqrt(n)` there are top sqrt(n) boxes, next n*sqrt(n) boxes are from `n*sqrt(n) to n*2*sqrt(n)` and so on
 
 And, to check, is our current turn is valid - we don't need to check all of cells in row, column and box - just calculate 3 indexes and check their entry into sets. 
+
+---
+## Algorithm
+
+  1. While we have cells to go and current cell is filled - we increasing indexes of row and column. Otherwise - skip
+  2. If there is no cell to go - turn on flag, print solution and stop processing of sudoku
+  3. For each number from 1 to n AND there is no solution yet DO:
+      1. If current combination of row, column and number is NOT valid - try next number. If it IS valid:
+          * Add necessary elements to sets of grid.
+          * Increase param k.
+          * Next step ot the solution(pause this turn and start new from 1.)
+          * Decrease param k.
+          * Delete elements from sets
+  4. If you have tried every number - just clear the cell

@@ -112,7 +112,6 @@ int check_solution(sudoku_grid *grid, size_t i, size_t j, size_t t){
       --Add necessary elements to sets of grid.
       --Increase param k.
       --Next step ot the solution
-    == If next step have provided no solution at all:
       --Decrease param k.
       --Delete elements from sets
   If you have tried every number - just clear the cell

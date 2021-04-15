@@ -5,7 +5,10 @@ Made with C and [Bit set library](https://github.com/DanArmor/Bit_set_C)
 ## Main idea
 The common problem of the simplest sudoku solvers is necessity to check ony by one each cell in row, column and box. So here we can avoid that by using sets for recognition, what cells we have already filled.
 
-We can represent sudoku grid like this: ![First img](img/1.png)
+We can represent sudoku grid like this:
+
+![First img](img/1.png)
+
 As we can see - each row, column and box may contain a set of numbers from 1 to n (for our example - 4). When we fill some cell with number - we add that number in corresponding sets. If we try to fill cell with number, but the number is already in one of sets - that invalid turn, and we need to try another number.
 
 But 3n sets for sudoku grid is too many, that's why we can represent each collection of sets (for rows, for columns and for boxes) as one big set for each collection:
@@ -15,7 +18,9 @@ But 3n sets for sudoku grid is too many, that's why we can represent each collec
 
 We can go futher and make a REALLY big set-all-in-one, but it makes our code less clear, I think.
 
-And now our grid looks like this: ![Second img](img/2.png)
+And now our grid looks like this:
+
+![Second img](img/2.png)
 
 For rows and columns the index in set is: number + i*n where i is num of column or row, and n is length of one side of grid.
 
